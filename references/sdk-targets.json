@@ -1,0 +1,132 @@
+{
+  "contract_fingerprint": "2289bcb0d661bdea6dd47c7967f37aace7d3a152e18e7d2f64c08514fb73e795",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "omni_wrap@1.0.0",
+        "ecosystem": "CMake",
+        "entry": "omniwrap_client_t",
+        "import": "#include \"omniwrap_client.h\""
+      },
+      "operations": {
+        "cancelPreview": {
+          "member": "omniwrap_cancel_preview",
+          "method": "POST",
+          "path": "/v1/projects/{projectId}/previews/{previewId}/cancel",
+          "resource": "previews",
+          "signature": "int omniwrap_cancel_preview(omniwrap_client_t *client, const char *arg_0_project_id, const char *arg_1_preview_id, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "createConfigurationRevision": {
+          "member": "omniwrap_create_configuration_revision",
+          "method": "POST",
+          "path": "/v1/projects/{projectId}/configuration-revisions",
+          "resource": "configurations",
+          "signature": "int omniwrap_create_configuration_revision(omniwrap_client_t *client, const char *arg_0_project_id, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "createPreview": {
+          "member": "omniwrap_create_preview",
+          "method": "POST",
+          "path": "/v1/projects/{projectId}/previews",
+          "resource": "previews",
+          "signature": "int omniwrap_create_preview(omniwrap_client_t *client, const char *arg_0_project_id, const char *body_json, omniwrap_response_t *out_response)"
+        },
+        "createSourceRevision": {
+          "member": "omniwrap_create_source_revision_with_query",
+          "method": "POST",
+          "path": "/v1/projects/{projectId}/source-revisions",
+          "resource": "sources",
+          "signature": "int omniwrap_create_source_revision_with_query(omniwrap_client_t *client, const char *arg_0_project_id, const char *body_json, const omniwrap_pair_t *query, size_t query_count, omniwrap_response_t *out_response)"
+        },
+        "getArtifact": {
+          "member": "omniwrap_get_artifact",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/artifacts/{artifactId}",
+          "resource": "artifacts",
+          "signature": "int omniwrap_get_artifact(omniwrap_client_t *client, const char *arg_0_project_id, const char *arg_1_artifact_id, omniwrap_response_t *out_response)"
+        },
+        "getConfigurationRevision": {
+          "member": "omniwrap_get_configuration_revision",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/configuration-revisions/{revisionId}",
+          "resource": "configurations",
+          "signature": "int omniwrap_get_configuration_revision(omniwrap_client_t *client, const char *arg_0_project_id, const char *arg_1_revision_id, omniwrap_response_t *out_response)"
+        },
+        "getEvidence": {
+          "member": "omniwrap_get_evidence",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/evidence/{evidenceId}",
+          "resource": "evidence",
+          "signature": "int omniwrap_get_evidence(omniwrap_client_t *client, const char *arg_0_project_id, const char *arg_1_evidence_id, omniwrap_response_t *out_response)"
+        },
+        "getPreview": {
+          "member": "omniwrap_get_preview",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/previews/{previewId}",
+          "resource": "previews",
+          "signature": "int omniwrap_get_preview(omniwrap_client_t *client, const char *arg_0_project_id, const char *arg_1_preview_id, omniwrap_response_t *out_response)"
+        },
+        "getPreviewEvents": {
+          "member": "omniwrap_get_preview_events_with_query",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/previews/{previewId}/events",
+          "resource": "previews",
+          "signature": "int omniwrap_get_preview_events_with_query(omniwrap_client_t *client, const char *arg_0_project_id, const char *arg_1_preview_id, const omniwrap_pair_t *query, size_t query_count, omniwrap_response_t *out_response)"
+        },
+        "getPreviewLogs": {
+          "member": "omniwrap_get_preview_logs_with_query",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/previews/{previewId}/logs",
+          "resource": "previews",
+          "signature": "int omniwrap_get_preview_logs_with_query(omniwrap_client_t *client, const char *arg_0_project_id, const char *arg_1_preview_id, const omniwrap_pair_t *query, size_t query_count, omniwrap_response_t *out_response)"
+        },
+        "getProject": {
+          "member": "omniwrap_get_project",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}",
+          "resource": "projects",
+          "signature": "int omniwrap_get_project(omniwrap_client_t *client, const char *arg_0_project_id, omniwrap_response_t *out_response)"
+        },
+        "getSourceRevision": {
+          "member": "omniwrap_get_source_revision",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/source-revisions/{revisionId}",
+          "resource": "sources",
+          "signature": "int omniwrap_get_source_revision(omniwrap_client_t *client, const char *arg_0_project_id, const char *arg_1_revision_id, omniwrap_response_t *out_response)"
+        },
+        "getUserContext": {
+          "member": "omniwrap_get_user_context",
+          "method": "GET",
+          "path": "/v1/me/context",
+          "resource": "context",
+          "signature": "int omniwrap_get_user_context(omniwrap_client_t *client, omniwrap_response_t *out_response)"
+        },
+        "listPreviewEvidence": {
+          "member": "omniwrap_list_preview_evidence_with_query",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/previews/{previewId}/evidence",
+          "resource": "evidence",
+          "signature": "int omniwrap_list_preview_evidence_with_query(omniwrap_client_t *client, const char *arg_0_project_id, const char *arg_1_preview_id, const omniwrap_pair_t *query, size_t query_count, omniwrap_response_t *out_response)"
+        },
+        "listPreviews": {
+          "member": "omniwrap_list_previews_with_query",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/previews",
+          "resource": "previews",
+          "signature": "int omniwrap_list_previews_with_query(omniwrap_client_t *client, const char *arg_0_project_id, const omniwrap_pair_t *query, size_t query_count, omniwrap_response_t *out_response)"
+        },
+        "listProjects": {
+          "member": "omniwrap_list_projects_with_query",
+          "method": "GET",
+          "path": "/v1/projects",
+          "resource": "projects",
+          "signature": "int omniwrap_list_projects_with_query(omniwrap_client_t *client, const omniwrap_pair_t *query, size_t query_count, omniwrap_response_t *out_response)"
+        }
+      },
+      "package_directory": "../omni-wrap-c-sdk",
+      "package_manifest": "CMakeLists.txt",
+      "reference": "api.md",
+      "renderer": "c"
+    }
+  ]
+}

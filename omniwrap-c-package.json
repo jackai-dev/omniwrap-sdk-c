@@ -1,0 +1,66 @@
+{
+  "artifact_type": "c-sdk",
+  "package_manifest": "CMakeLists.txt",
+  "package_name": "omni_wrap",
+  "package_version": "1.0.0",
+  "runtime_floor": ">=3.16",
+  "source_files": [
+    {
+      "path": ".omniwrap-skill-manifest.json",
+      "sha256": "a13ab0701f91a1a86ffbd953003f763e998768a9f9fdf984c533030786c39148",
+      "size_bytes": 347
+    },
+    {
+      "path": "agent-session.json",
+      "sha256": "7916ac054834285c0213bde62a80e001bca572d6f33037cb81f77a6ade4c4b37",
+      "size_bytes": 158814
+    },
+    {
+      "path": "AGENT_SESSION.md",
+      "sha256": "a6038d3e7cf9db6ba42df462cfab4705fdd7c2745c0328f3d86c22ba1e80391e",
+      "size_bytes": 713
+    },
+    {
+      "path": "api.md",
+      "sha256": "917f30530c66aea23b2483519c847293044084bcbeaf4baec009e11cd11e934e",
+      "size_bytes": 65143
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "578abc258e41c7eb10d372e1b0eac038c58b8919d5a6ebeeccb8e101ce5314ff",
+      "size_bytes": 642
+    },
+    {
+      "path": "include/omniwrap_agent_session.h",
+      "sha256": "b2a846339edba5bc3e620b03b2d6a308c731d838e50d0fade4dd890d397534ad",
+      "size_bytes": 1072
+    },
+    {
+      "path": "include/omniwrap_client.h",
+      "sha256": "c9222db602da8094baf7ea2aea43995e188760d5d43b604fe9e6ee33e9ffd463",
+      "size_bytes": 6991
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "fb11dfcf40507855f2fbe0fdcee036cfe549b3ef7e52ebeb09e0dd66d552a128",
+      "size_bytes": 282
+    },
+    {
+      "path": "README.md",
+      "sha256": "3b2b769dbcc9374cf6347eceb44da38c86c77287f0759847c12bd575770bb3f6",
+      "size_bytes": 773
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "476fb9434291e82e9dddccd174329dbcbdd2c99db51aac3d0b1656149d13b933",
+      "size_bytes": 8892
+    },
+    {
+      "path": "src/client.c",
+      "sha256": "4a9d5465690c5351685bdce330511b2040f8e9dc068ae28cf0851f14aa5dd80b",
+      "size_bytes": 31795
+    }
+  ],
+  "source_version": "1.0.0",
+  "target": "c"
+}

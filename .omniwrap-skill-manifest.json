@@ -1,0 +1,14 @@
+{
+  "agent_protocols_supported": [
+    "mcp-code-mode",
+    "a2a-1.0",
+    "ag-ui",
+    "mcp-tasks"
+  ],
+  "client_name": "OmniWrapClient",
+  "language": "c",
+  "operation_count": 16,
+  "package_name": "omni_wrap",
+  "schema": "omniwrap.embedded-skill-manifest/v1",
+  "sha256": "476fb9434291e82e9dddccd174329dbcbdd2c99db51aac3d0b1656149d13b933"
+}
